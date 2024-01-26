@@ -1,2 +1,81 @@
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ff8c42, #ff3a20); /* Màu cam gradient */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Màu nền trắng với độ mờ 90% */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Bo tròn ảnh */
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profile cá nhân</h1>
+    </header>
+
+    <section>
+        <img src="../truong.jpg" alt="Ảnh cá nhân">
+        <h2>Trường<h2>
+      
+        <button onclick="showContact()">Hello</button>
+    </section>
+
+    <script>
+        function showContact() {
+            alert("liên lạc với tôi qua email: ntt.email@example.com");
+        }
+    </script>
+
+</body>
+</html>
