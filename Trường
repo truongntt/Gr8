@@ -1,32 +1,57 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Profile</title>
+    <title>Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #ff8c42, #ff3a20); /* Màu cam gradient */
-            color: #fff;
+            background-color: #f0f2f5;
         }
 
         header {
+            background-color: #4267B2;
+            color: #fff;
             text-align: center;
             padding: 1em 0;
         }
 
-        section {
-            max-width: 600px;
-            margin: 20px auto;
+        .cover-photo {
+            width: 100%;
+            height: 250px;
+            background-image: url('cloud.avif'); /* Đường dẫn đến ảnh bìa */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-container {
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('truong.jpg'); /* Đường dẫn đến ảnh đại diện */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-info > h2 {
+            margin-top: 100px; /* Duy trì khoảng cách từ ảnh đại diện */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Màu nền trắng với độ mờ 90% */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+           
+         
         }
 
         h1, h2 {
@@ -34,48 +59,26 @@
         }
 
         p {
+            color: #555;
             line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%; /* Bo tròn ảnh */
-            margin-bottom: 20px;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #555;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Profile cá nhân</h1>
-    </header>
+    
 
-    <section>
-        <img src="../truong.jpg" alt="Ảnh cá nhân">
-        <h2>Trường<h2>
-      
-        <button onclick="showContact()">Hello</button>
-    </section>
+    <div class="cover-photo"></div>
 
-    <script>
-        function showContact() {
-            alert("liên lạc với tôi qua email: ntt.email@example.com");
-        }
-    </script>
+    <div class="profile-container">
+        <div class="profile-image"></div>
+    </div>
+
+    <div class="profile-info">
+        <h2>Nguyễn Trọng Trường</h2>
+        <p>Location | Job Title</p>
+        <p>About me: Write a short description about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio vel metus tristique, a iaculis felis fringilla.</p>
+    </div>
 
 </body>
 </html>
