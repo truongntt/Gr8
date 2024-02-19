@@ -2,6 +2,9 @@
 .header{
     border: 2px solid var(--color-three);
     background-color: var(--color-three);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 
 
 }
@@ -46,7 +49,7 @@
 .section-one{
     position: relative;
   
-    height: 600px;
+    height: 800px;
     background-color: var(--color-six);
 
 
@@ -62,7 +65,7 @@
         border-radius: 50%;
         border: 5px solid #fff;
         position: absolute;
-        top: 300px;
+        top: 350px;
         left: 15%;
         transform: translate(-50%, -50%);
       
@@ -99,18 +102,19 @@
 }
 
 
-/* End Section One */
-/* Section Two */
+
 .section-one .inner-wrap .inner-content{
     display: flex;
     justify-content: flex-end;
 }
  .section-one .inner-title{
     position: absolute;
-    top: 100px;
+    top: 250px;
     right: 150px;
 
 }
+
+/* End Section One */
 
     
     
